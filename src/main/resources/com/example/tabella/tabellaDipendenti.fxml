@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox prefHeight="417.0" prefWidth="800" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabdipendentilibro.TabellaDipendentiController">
+<VBox prefHeight="417.0" prefWidth="800" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabella.TabellaDipendentiController">
 
     <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
     <children>

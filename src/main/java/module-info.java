@@ -3,6 +3,6 @@ module com.example.tabdipendentilibro {
     requires javafx.fxml;
 
 
-    opens com.example.tabdipendentilibro to javafx.fxml;
-    exports com.example.tabdipendentilibro;
+    opens com.example.tabella to javafx.fxml;
+    exports com.example.tabella;
 }

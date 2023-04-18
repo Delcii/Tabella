@@ -1,4 +1,4 @@
-package com.example.tabdipendentilibro;
+package com.example.tabella;
 
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;

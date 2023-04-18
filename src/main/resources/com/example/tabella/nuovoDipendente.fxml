@@ -4,7 +4,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" prefHeight="222.0" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabdipendentilibro.ModificaDipendenteController">
+<VBox alignment="CENTER" prefHeight="222.0" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabella.NuovoDipendenteController">
     <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
     <children>
 
@@ -20,21 +20,21 @@
                 <Label text="età:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
                 <TextField fx:id="campoEtà" GridPane.columnIndex="1" GridPane.rowIndex="3" />
             </children>
-         <columnConstraints>
-            <ColumnConstraints />
-            <ColumnConstraints />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-            <RowConstraints />
-         </rowConstraints>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
         </GridPane>
 
-        <Button onMousePressed="#handleSalvaModifiche" text="Salva">
-         <VBox.margin>
-            <Insets top="15.0" />
-         </VBox.margin></Button>
+        <Button fx:id="Aggiungi" onMousePressed="#handleSalvaModifiche" text="Aggiungi">
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin></Button>
     </children>
 </VBox>

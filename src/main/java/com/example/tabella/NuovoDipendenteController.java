@@ -1,4 +1,4 @@
-package com.example.tabdipendentilibro;
+package com.example.tabella;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
