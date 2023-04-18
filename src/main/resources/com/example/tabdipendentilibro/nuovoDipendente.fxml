@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="222.0" prefWidth="300" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabdipendentilibro.NuovoDipendenteController">
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+    <children>
+
+        <GridPane hgap="10" vgap="10">
+
+            <children>
+                <Label text="Nome:" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                <TextField fx:id="campoNome" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label text="Cognome:" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                <TextField fx:id="campoCognome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Label text="Codice Fiscale:" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+                <TextField fx:id="campoCodiceFiscale" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Label text="età:" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+                <TextField fx:id="campoEtà" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            </children>
+            <columnConstraints>
+                <ColumnConstraints />
+                <ColumnConstraints />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+                <RowConstraints />
+            </rowConstraints>
+        </GridPane>
+
+        <Button fx:id="Aggiungi" onMousePressed="#handleSalvaModifiche" text="Aggiungi">
+            <VBox.margin>
+                <Insets top="15.0" />
+            </VBox.margin></Button>
+    </children>
+</VBox>

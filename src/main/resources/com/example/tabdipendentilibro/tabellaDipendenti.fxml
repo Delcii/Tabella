@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="417.0" prefWidth="800" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tabdipendentilibro.TabellaDipendentiController">
+
+    <padding><Insets bottom="25" left="25" right="25" top="25" /></padding>
+    <children>
+
+        <VBox alignment="TOP_RIGHT" spacing="15">
+            <children>
+
+                <HBox alignment="CENTER" prefHeight="490.0" prefWidth="788.0" spacing="10">
+                    <children>
+      
+                      <TableView fx:id="tabellaDipendenti" editable="true" maxHeight="350" prefHeight="350.0" prefWidth="460.0" HBox.hgrow="ALWAYS">
+      <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                          </columnResizePolicy>
+                          <columns>
+                              <TableColumn fx:id="colonnaNome" text="Nome" />
+                              <TableColumn fx:id="colonnaCognome" text="Cognome" />
+                              <TableColumn fx:id="colonnaCodiceFiscale" text="Codice Fiscale" />
+                              <TableColumn fx:id="colonnaEtà" text="Età" />
+                          </columns>
+                      </TableView>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0">
+                     <children>
+                              <Button onMouseClicked="#handleModificaDipendente" text="Modifica..." />
+                              <Button onMouseClicked="#handleEliminaDipendente" text="Elimina..." />
+                            <Button onMouseClicked="#handleNuovoDipendente" text="Aggiungi..." />
+                     </children>
+                  </VBox>
+                    </children>
+                </HBox>
+
+            </children>
+        </VBox>
+
+    </children>
+</VBox>
